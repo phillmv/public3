@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build & Deploy to GitHub Pages
+        with:
+          INPUT_FOLDER: "docs"
         uses: phillmv/arquivo-export@main
-    with:
-      INPUT_FOLDER: "docs"
